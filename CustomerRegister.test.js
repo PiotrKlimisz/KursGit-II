@@ -27,10 +27,10 @@ catch(error){
 
 try {
     customerRegister.register("sampleLogin", "shortPass");
-    console.log("FAIL: Password lenght should be at least 9");
+    console.log("FAIL: Password length should be at least 10");
 }
 catch(error){
-    if(error !== "Password lenght should be at least 9"){
-        console.log("FAIL: Expect 'Password lenght should be at least 9'");
+    if(error !== "Password length should be at least 10"){
+        console.log("FAIL: Expect 'Password length should be at least 10'", error);
     }
 }
