@@ -24,3 +24,13 @@ catch(error){
         console.log("FAIL: Expect 'Password is required'");
     }
 }
+
+try {
+    customerRegister.register("sampleLogin", "SampleL0ngP@ssw0rd!!!", "WrongReplyPassword");
+    console.log("FAIL: Passwords are not the same")
+}
+catch(error){
+    if(error !== "Passwords are not the same"){
+        console.log("FAIL: Expect 'Passwords are not the same'");
+    }
+}
