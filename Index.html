@@ -15,9 +15,10 @@
     document.getElementById("register-button").onclick = function(){
         var login = document.getElementById("login-input").value;
         var password = document.getElementById("password-input").value;
+        var replyPassword = document.getElementById("reply-password-input").value;
         try{
             var customerRegister = Object.create(CustomerRegister);
-            customerRegister.register(login,password);
+            customerRegister.register(login, password, replyPassword);
             alert("Registered");
         }
         catch(error){
