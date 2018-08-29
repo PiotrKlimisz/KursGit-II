@@ -16,7 +16,7 @@ catch(error){
 }
 
 try {
-    customElements.register("sampleLogin", "");
+    customerRegister.register("sampleLogin", "");
     console.log("FAIL: password is required")
 }
 catch(error){
